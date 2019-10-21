@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Next Booking View Controller-->
+        <scene sceneID="yXQ-aP-d1U">
+            <objects>
+                <viewController storyboardIdentifier="NextBookingViewController" id="vYa-b6-aWi" customClass="NextBookingViewController" customModule="LoveSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lod-9z-wMU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zDd-6h-Ir4" userLabel="VehicleImage">
+                                <rect key="frame" x="0.0" y="94" width="414" height="250"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMq-Ib-noU" userLabel="BookingTitleLabel">
+                                <rect key="frame" x="41.5" y="394" width="331" height="48"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="35"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.32549019607843138" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VW-8e-Wot" userLabel="BookingDescriptionLabel">
+                                <rect key="frame" x="41.5" y="467" width="331" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLn-Ia-R08" userLabel="TimerContainerView">
+                                <rect key="frame" x="74.5" y="545.5" width="265" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arf-10-fdC" userLabel="TimerLabel">
+                                        <rect key="frame" x="0.0" y="12" width="265" height="36"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="00c-Wj-6Vg"/>
+                                    <constraint firstItem="Arf-10-fdC" firstAttribute="width" secondItem="BLn-Ia-R08" secondAttribute="width" id="fIZ-0s-SAo"/>
+                                    <constraint firstItem="Arf-10-fdC" firstAttribute="centerY" secondItem="BLn-Ia-R08" secondAttribute="centerY" id="iSd-jc-6dm"/>
+                                    <constraint firstItem="Arf-10-fdC" firstAttribute="centerX" secondItem="BLn-Ia-R08" secondAttribute="centerX" id="kqJ-F4-SIM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LMq-Ib-noU" firstAttribute="centerX" secondItem="Lod-9z-wMU" secondAttribute="centerX" id="4ry-Aw-4ky"/>
+                            <constraint firstItem="zDd-6h-Ir4" firstAttribute="trailing" secondItem="wCT-7R-2J0" secondAttribute="trailing" id="C6y-pE-R4b"/>
+                            <constraint firstItem="LMq-Ib-noU" firstAttribute="width" secondItem="wCT-7R-2J0" secondAttribute="width" multiplier="0.8" id="IPb-g8-6ip"/>
+                            <constraint firstItem="0VW-8e-Wot" firstAttribute="centerX" secondItem="LMq-Ib-noU" secondAttribute="centerX" id="NxO-Hz-ggf"/>
+                            <constraint firstItem="LMq-Ib-noU" firstAttribute="top" secondItem="zDd-6h-Ir4" secondAttribute="bottom" constant="50" id="UeA-oP-Ib8"/>
+                            <constraint firstItem="zDd-6h-Ir4" firstAttribute="top" secondItem="wCT-7R-2J0" secondAttribute="top" constant="50" id="VSo-RR-AEP"/>
+                            <constraint firstItem="BLn-Ia-R08" firstAttribute="top" secondItem="0VW-8e-Wot" secondAttribute="bottom" constant="53.5" id="Vlv-yh-cVe"/>
+                            <constraint firstItem="BLn-Ia-R08" firstAttribute="centerX" secondItem="0VW-8e-Wot" secondAttribute="centerX" id="W3i-X3-kU6"/>
+                            <constraint firstItem="zDd-6h-Ir4" firstAttribute="leading" secondItem="wCT-7R-2J0" secondAttribute="leading" id="b6D-0a-Xzu"/>
+                            <constraint firstItem="BLn-Ia-R08" firstAttribute="width" secondItem="0VW-8e-Wot" secondAttribute="width" multiplier="0.8" id="pTa-eC-mb7"/>
+                            <constraint firstItem="LMq-Ib-noU" firstAttribute="centerY" secondItem="Lod-9z-wMU" secondAttribute="centerY" constant="-30" id="qGU-7G-MuJ"/>
+                            <constraint firstItem="0VW-8e-Wot" firstAttribute="width" secondItem="LMq-Ib-noU" secondAttribute="width" id="ve8-wa-Z98"/>
+                            <constraint firstItem="0VW-8e-Wot" firstAttribute="top" secondItem="LMq-Ib-noU" secondAttribute="bottom" constant="25" id="xLY-32-bOo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wCT-7R-2J0"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="0VW-8e-Wot" id="RwM-i3-XO0"/>
+                        <outlet property="timerContainerView" destination="BLn-Ia-R08" id="arD-Ak-X4r"/>
+                        <outlet property="timerLabel" destination="Arf-10-fdC" id="SDS-iz-abW"/>
+                        <outlet property="timerViewHeightConstraint" destination="00c-Wj-6Vg" id="ZSJ-qb-C9U"/>
+                        <outlet property="titleLabel" destination="LMq-Ib-noU" id="lOd-nl-Hhi"/>
+                        <outlet property="vehicleImage" destination="zDd-6h-Ir4" id="Ecd-8F-YSo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4q-az-eMh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.66666666666669" y="190.84821428571428"/>
+        </scene>
+    </scenes>
+</document>

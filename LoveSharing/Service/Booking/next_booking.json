@@ -1,0 +1,18 @@
+{
+  "status" : "logged",
+  "next_booking" : {
+    "start" : "22 Oct 2019 22:45",
+    "dropoff_location" : "WWM",
+    "category_image" : "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201904/Alto_K10_Main_0.jpeg?.2kQcPUseEV3U29QxTvIXSAZfD_1P_PM",
+    "damage_reported" : false,
+    "category" : "Cars",
+    "status" : "active",
+    "booking_id" : "Y795-R7E",
+    "end" : "22 Oct 2019 23:45",
+    "payments" : [
+
+    ],
+    "pickup_location" : "WWM",
+    "price" : "1.00 €"
+  }
+}

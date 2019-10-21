@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AC76EF24A92C4007698C76C /* Pods_LoveSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D9928C69B532C88FDD216C /* Pods_LoveSharing.framework */; };
+		C11B5D8B235B1DA80023ED86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5D8A235B1DA80023ED86 /* AppDelegate.swift */; };
+		C11B5D8D235B1DA80023ED86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5D8C235B1DA80023ED86 /* SceneDelegate.swift */; };
+		C11B5D8F235B1DA80023ED86 /* NextBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5D8E235B1DA80023ED86 /* NextBookingViewController.swift */; };
+		C11B5D94235B1DAB0023ED86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11B5D93235B1DAB0023ED86 /* Assets.xcassets */; };
+		C11B5D97235B1DAB0023ED86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11B5D95235B1DAB0023ED86 /* LaunchScreen.storyboard */; };
+		C11B5DA5235B1F7E0023ED86 /* NextBookingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DA4235B1F7E0023ED86 /* NextBookingCoordinator.swift */; };
+		C11B5DA7235B1F900023ED86 /* NextBookingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DA6235B1F900023ED86 /* NextBookingInteractor.swift */; };
+		C11B5DAA235B1FB80023ED86 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DA9235B1FB80023ED86 /* Booking.swift */; };
+		C11B5DAE235B1FEB0023ED86 /* BookingDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DAD235B1FEB0023ED86 /* BookingDetailsService.swift */; };
+		C11B5DB0235B20AC0023ED86 /* next_booking.json in Resources */ = {isa = PBXBuildFile; fileRef = C11B5DAF235B20AC0023ED86 /* next_booking.json */; };
+		C11B5DB3235B25170023ED86 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DB2235B25170023ED86 /* BaseCoordinator.swift */; };
+		C11B5DB5235B25380023ED86 /* BaseModuleDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DB4235B25380023ED86 /* BaseModuleDependencies.swift */; };
+		C11B5DB7235B25530023ED86 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DB6235B25530023ED86 /* BaseViewController.swift */; };
+		C11B5DB9235B25FB0023ED86 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DB8235B25FB0023ED86 /* BaseInteractor.swift */; };
+		C11B5DBB235B2AE90023ED86 /* NextBookingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11B5DBA235B2AE90023ED86 /* NextBookingStoryboard.storyboard */; };
+		C11B5DBD235B31140023ED86 /* MediaDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DBC235B31140023ED86 /* MediaDownloadService.swift */; };
+		C11B5DC0235B5A160023ED86 /* IPhoneDeviceUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B5DBF235B5A160023ED86 /* IPhoneDeviceUtility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34D9928C69B532C88FDD216C /* Pods_LoveSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40087CF30DB188BF02436519 /* Pods-LoveSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveSharing.debug.xcconfig"; path = "Target Support Files/Pods-LoveSharing/Pods-LoveSharing.debug.xcconfig"; sourceTree = "<group>"; };
+		9ABE4D9DC2E26359179D85ED /* Pods-LoveSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveSharing.release.xcconfig"; path = "Target Support Files/Pods-LoveSharing/Pods-LoveSharing.release.xcconfig"; sourceTree = "<group>"; };
+		C11B5D87235B1DA70023ED86 /* LoveSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11B5D8A235B1DA80023ED86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C11B5D8C235B1DA80023ED86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C11B5D8E235B1DA80023ED86 /* NextBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBookingViewController.swift; sourceTree = "<group>"; };
+		C11B5D93235B1DAB0023ED86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C11B5D96235B1DAB0023ED86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C11B5D98235B1DAB0023ED86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11B5DA4235B1F7E0023ED86 /* NextBookingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBookingCoordinator.swift; sourceTree = "<group>"; };
+		C11B5DA6235B1F900023ED86 /* NextBookingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBookingInteractor.swift; sourceTree = "<group>"; };
+		C11B5DA9235B1FB80023ED86 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		C11B5DAD235B1FEB0023ED86 /* BookingDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailsService.swift; sourceTree = "<group>"; };
+		C11B5DAF235B20AC0023ED86 /* next_booking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = next_booking.json; sourceTree = "<group>"; };
+		C11B5DB2235B25170023ED86 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		C11B5DB4235B25380023ED86 /* BaseModuleDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModuleDependencies.swift; sourceTree = "<group>"; };
+		C11B5DB6235B25530023ED86 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C11B5DB8235B25FB0023ED86 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		C11B5DBA235B2AE90023ED86 /* NextBookingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NextBookingStoryboard.storyboard; sourceTree = "<group>"; };
+		C11B5DBC235B31140023ED86 /* MediaDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDownloadService.swift; sourceTree = "<group>"; };
+		C11B5DBF235B5A160023ED86 /* IPhoneDeviceUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPhoneDeviceUtility.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C11B5D84235B1DA70023ED86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC76EF24A92C4007698C76C /* Pods_LoveSharing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		975A403A57C5ED3550F9A373 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34D9928C69B532C88FDD216C /* Pods_LoveSharing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A13A2FAF806B555EE715E36F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40087CF30DB188BF02436519 /* Pods-LoveSharing.debug.xcconfig */,
+				9ABE4D9DC2E26359179D85ED /* Pods-LoveSharing.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C11B5D7E235B1DA70023ED86 = {
+			isa = PBXGroup;
+			children = (
+				C11B5D89235B1DA70023ED86 /* LoveSharing */,
+				C11B5D88235B1DA70023ED86 /* Products */,
+				A13A2FAF806B555EE715E36F /* Pods */,
+				975A403A57C5ED3550F9A373 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C11B5D88235B1DA70023ED86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5D87235B1DA70023ED86 /* LoveSharing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C11B5D89235B1DA70023ED86 /* LoveSharing */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5DBE235B5A000023ED86 /* Utility */,
+				C11B5D9E235B1DB50023ED86 /* Service */,
+				C11B5DA8235B1F970023ED86 /* Model */,
+				C11B5DA0235B1DEB0023ED86 /* Assets */,
+				C11B5D9F235B1DC20023ED86 /* Module */,
+				C11B5D8A235B1DA80023ED86 /* AppDelegate.swift */,
+				C11B5D8C235B1DA80023ED86 /* SceneDelegate.swift */,
+				C11B5D98235B1DAB0023ED86 /* Info.plist */,
+			);
+			path = LoveSharing;
+			sourceTree = "<group>";
+		};
+		C11B5D9E235B1DB50023ED86 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5DAC235B1FD20023ED86 /* Booking */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C11B5D9F235B1DC20023ED86 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5DB1235B25060023ED86 /* Base */,
+				C11B5DA3235B1ED70023ED86 /* LaunchScreen */,
+				C11B5DA2235B1E5D0023ED86 /* NextBooking */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C11B5DA0235B1DEB0023ED86 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5D93235B1DAB0023ED86 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C11B5DA2235B1E5D0023ED86 /* NextBooking */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5DA4235B1F7E0023ED86 /* NextBookingCoordinator.swift */,
+				C11B5DA6235B1F900023ED86 /* NextBookingInteractor.swift */,
+				C11B5D8E235B1DA80023ED86 /* NextBookingViewController.swift */,
+				C11B5DBA235B2AE90023ED86 /* NextBookingStoryboard.storyboard */,
+			);
+			path = NextBooking;
+			sourceTree = "<group>";
+		};
+		C11B5DA3235B1ED70023ED86 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5D95235B1DAB0023ED86 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		C11B5DA8235B1F970023ED86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5DAB235B1FBF0023ED86 /* Booking */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C11B5DAB235B1FBF0023ED86 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5DA9235B1FB80023ED86 /* Booking.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		C11B5DAC235B1FD20023ED86 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5DAD235B1FEB0023ED86 /* BookingDetailsService.swift */,
+				C11B5DBC235B31140023ED86 /* MediaDownloadService.swift */,
+				C11B5DAF235B20AC0023ED86 /* next_booking.json */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		C11B5DB1235B25060023ED86 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5DB4235B25380023ED86 /* BaseModuleDependencies.swift */,
+				C11B5DB2235B25170023ED86 /* BaseCoordinator.swift */,
+				C11B5DB6235B25530023ED86 /* BaseViewController.swift */,
+				C11B5DB8235B25FB0023ED86 /* BaseInteractor.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C11B5DBE235B5A000023ED86 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C11B5DBF235B5A160023ED86 /* IPhoneDeviceUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C11B5D86235B1DA70023ED86 /* LoveSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C11B5D9B235B1DAB0023ED86 /* Build configuration list for PBXNativeTarget "LoveSharing" */;
+			buildPhases = (
+				A4367819B12838C2E3D7F990 /* [CP] Check Pods Manifest.lock */,
+				C11B5D83235B1DA70023ED86 /* Sources */,
+				C11B5D84235B1DA70023ED86 /* Frameworks */,
+				C11B5D85235B1DA70023ED86 /* Resources */,
+				A7157543A87548C5EEE38938 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoveSharing;
+			productName = LoveSharing;
+			productReference = C11B5D87235B1DA70023ED86 /* LoveSharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C11B5D7F235B1DA70023ED86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = xparrow;
+				TargetAttributes = {
+					C11B5D86235B1DA70023ED86 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = C11B5D82235B1DA70023ED86 /* Build configuration list for PBXProject "LoveSharing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C11B5D7E235B1DA70023ED86;
+			productRefGroup = C11B5D88235B1DA70023ED86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C11B5D86235B1DA70023ED86 /* LoveSharing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C11B5D85235B1DA70023ED86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11B5DBB235B2AE90023ED86 /* NextBookingStoryboard.storyboard in Resources */,
+				C11B5DB0235B20AC0023ED86 /* next_booking.json in Resources */,
+				C11B5D97235B1DAB0023ED86 /* LaunchScreen.storyboard in Resources */,
+				C11B5D94235B1DAB0023ED86 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4367819B12838C2E3D7F990 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoveSharing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7157543A87548C5EEE38938 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveSharing/Pods-LoveSharing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoveSharing/Pods-LoveSharing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoveSharing/Pods-LoveSharing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C11B5D83235B1DA70023ED86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11B5D8F235B1DA80023ED86 /* NextBookingViewController.swift in Sources */,
+				C11B5DAA235B1FB80023ED86 /* Booking.swift in Sources */,
+				C11B5DB5235B25380023ED86 /* BaseModuleDependencies.swift in Sources */,
+				C11B5DA7235B1F900023ED86 /* NextBookingInteractor.swift in Sources */,
+				C11B5D8B235B1DA80023ED86 /* AppDelegate.swift in Sources */,
+				C11B5DB7235B25530023ED86 /* BaseViewController.swift in Sources */,
+				C11B5DBD235B31140023ED86 /* MediaDownloadService.swift in Sources */,
+				C11B5DAE235B1FEB0023ED86 /* BookingDetailsService.swift in Sources */,
+				C11B5DC0235B5A160023ED86 /* IPhoneDeviceUtility.swift in Sources */,
+				C11B5D8D235B1DA80023ED86 /* SceneDelegate.swift in Sources */,
+				C11B5DB9235B25FB0023ED86 /* BaseInteractor.swift in Sources */,
+				C11B5DA5235B1F7E0023ED86 /* NextBookingCoordinator.swift in Sources */,
+				C11B5DB3235B25170023ED86 /* BaseCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C11B5D95235B1DAB0023ED86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C11B5D96235B1DAB0023ED86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C11B5D99235B1DAB0023ED86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C11B5D9A235B1DAB0023ED86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C11B5D9C235B1DAB0023ED86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40087CF30DB188BF02436519 /* Pods-LoveSharing.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7LF2VLC52;
+				INFOPLIST_FILE = LoveSharing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xparrow.LoveSharing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C11B5D9D235B1DAB0023ED86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ABE4D9DC2E26359179D85ED /* Pods-LoveSharing.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E7LF2VLC52;
+				INFOPLIST_FILE = LoveSharing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xparrow.LoveSharing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C11B5D82235B1DA70023ED86 /* Build configuration list for PBXProject "LoveSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11B5D99235B1DAB0023ED86 /* Debug */,
+				C11B5D9A235B1DAB0023ED86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C11B5D9B235B1DAB0023ED86 /* Build configuration list for PBXNativeTarget "LoveSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11B5D9C235B1DAB0023ED86 /* Debug */,
+				C11B5D9D235B1DAB0023ED86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C11B5D7F235B1DA70023ED86 /* Project object */;
+}
